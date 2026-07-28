@@ -8,6 +8,16 @@ Context API lets a parent component provide data to any component below it in th
 
 Context API helps avoid **prop drilling**, where props must be passed through components that don't actually use them.
 
+### Concepts
+
+Context API uses three main APIs:
+
+- **`createContext()`** – creates a new context.
+
+- **`<Context value={...}>`** – provides data to components below it.
+
+- **`useContext()`** – gets data from a context.
+
 ### Before (Prop Drilling)
 
 Imagine an online store where each product card has its own **Like** button. We also want to display the total number of liked products in the `Header`.
